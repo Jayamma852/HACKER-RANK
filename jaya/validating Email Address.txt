@@ -1,0 +1,25 @@
+//You are given an integer N  followed by N email addresses. Your task is to print a list containing only valid email addresses in lexicographical order.
+
+
+
+# importing the regular expression module
+import re
+
+def fun(s):
+    # defining the patterns
+    pattern = re.compile("^[\\w-]+@[0-9a-zA-Z]+\\.[a-z]{1,3}$")
+    
+    # returing if the email is valid
+    return pattern.match(s)
+
+
+
+
+
+Input (stdin)
+3
+lara@hackerrank.com
+brian-23@hackerrank.com
+britts_54@hackerrank.com
+Expected Output
+['brian-23@hackerrank.com', 'britts_54@hackerrank.com', 'lara@hackerrank.com']
