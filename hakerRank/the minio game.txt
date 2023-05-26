@@ -1,0 +1,35 @@
+//Kevin and Stuart want to play the 'The Minion Game'.
+
+Game Rules
+
+Both players are given the same string, .
+Both players have to make substrings using the letters of the string .
+Stuart has to make words starting with consonants.
+Kevin has to make words starting with vowels.
+The game ends when both players have made all possible substrings.//
+
+
+def minion_game(string):
+    # your code goes here
+    """Print the winner of the game and the score."""
+    kevin = stuart = 0
+    length: int = len(string)
+    for i, char in enumerate(string):
+        points: int = length - i
+        if char in {"A", "E", "I", "O", "U"}:
+            kevin += points
+        else:
+            stuart += points
+    if kevin == stuart:
+        print("Draw")
+    else:
+        print(*("Stuart", stuart) if stuart > kevin else ("Kevin", kevin))
+       
+
+
+
+
+nput (stdin)
+BANANA
+Expected Output
+Stuart 12

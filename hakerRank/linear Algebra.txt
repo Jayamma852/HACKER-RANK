@@ -1,0 +1,14 @@
+//The NumPy module also comes with a number of built-in routines for linear algebra calculations. These can be found in the sub-module linalg.//
+
+
+import numpy
+print(round(numpy.linalg.det(numpy.array([input().split() for _ in range(int(input()))],float)),2))
+
+
+
+Input (stdin)
+2
+1.1 1.1
+1.1 1.1
+Expected Output
+0.0

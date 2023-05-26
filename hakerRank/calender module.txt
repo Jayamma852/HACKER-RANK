@@ -1,0 +1,20 @@
+//You are given a date. Your task is to find what the day is on that date.//
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import calendar
+month, day, year = list(map(int,input().split()))
+ans = calendar.weekday(year, month, day)
+print((calendar.day_name[ans]).upper())
+
+
+
+Input (stdin)
+08 05 2015
+Expected Output
+WEDNESDAY
+NEED HELP?
+View discussions
+View editorial
+View top submissions
+BlogScoringEnvironmentFAQAbout UsSupportCareersTerms Of ServicePrivacy PolicyInput (stdin)

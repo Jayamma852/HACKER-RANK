@@ -1,0 +1,59 @@
+//Initialize your list and read in the value of  followed by  lines of commands where each command will be of the  types listed above. Iterate through each command in order and perform the corresponding operation on your list.//
+
+
+if __name__ == '__main__':
+    N = int(input())
+    List=[];
+
+    for i in range(N):
+
+        command=input().split();
+
+        if command[0] == "insert":
+
+            List.insert(int(command[1]),int(command[2]))
+
+        elif command[0] == "append":
+
+            List.append(int(command[1]))
+
+        elif command[0] == "pop":
+
+            List.pop();
+
+        elif command[0] == "print":
+
+            print(List)
+
+        elif command[0] == "remove":
+
+            List.remove(int(command[1]))
+
+        elif command[0] == "sort":
+
+            List.sort();
+
+        else:
+
+            List.reverse();
+
+
+
+Input (stdin)
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+Expected Output
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]

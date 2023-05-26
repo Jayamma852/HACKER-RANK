@@ -1,0 +1,23 @@
+//You are given a 2-D array with dimensions X.
+Your task is to perform the  tool over axis  and then find the  of that result.//
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Sum and Prod in Python - Hacker Rank Solution
+# Python 3
+# Sum and Prod in Python - Hacker Rank Solution START
+import numpy
+
+N, M = map(int, input().split())
+A = numpy.array([input().split() for _ in range(N)], int)
+print(numpy.prod(numpy.sum(A, axis=0), axis=0))
+# Sum and Prod in Python - Hacker Rank Solution END
+
+
+
+Input (stdin)
+2 2
+1 2
+3 4
+Expected Output
+24

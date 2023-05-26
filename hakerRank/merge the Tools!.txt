@@ -1,0 +1,27 @@
+//There are three substrings of length  to consider: 'AAA', 'BCA' and 'DDE'. The first substring is all 'A' characters, so . The second substring has all distinct characters, so . The third substring has  different characters, so . Note that a subsequence maintains the original order of characters encountered. The order of characters in each subsequence shown is important.//
+
+
+
+def merge_the_tools(string, k):
+    # your code goes here
+    temp = []
+    len_temp = 0
+    for item in string:
+        len_temp += 1
+        if item not in temp:
+            temp.append(item)
+        if len_temp ==k:
+            print (''.join(temp))
+            temp = []
+            len_temp = 0
+
+
+
+Input (stdin)
+AABCAAADA
+3
+Expected Output
+AB
+CA
+AD
+

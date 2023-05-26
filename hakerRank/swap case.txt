@@ -1,0 +1,24 @@
+//You are given a string and your task is to swap cases. In other words, convert all lowercase letters to uppercase letters and vice versa.//
+
+
+def swap_case(s):
+    SwAp = ''
+    for char in s:
+        if char.upper() != char:
+            SwAp += char.upper()
+        elif char.lower() != char:
+            SwAp += char.lower()
+        else:
+            SwAp += char
+    
+    
+    return SwAp
+
+
+
+
+
+Input (stdin)
+HackerRank.com presents "Pythonist 2".
+Expected Output
+hACKERrANK.COM PRESENTS "pYTHONIST 2".
